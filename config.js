@@ -3,7 +3,7 @@
 module.exports = {
   url: "https://developer-diary.netlify.com",
   title: "Developer Diary",
-  tagline: "aspiring developer",
+  tagline: "aspiring developer and minecraft enthusiast",
   copyright: "© 2019 willjw3, All rights reserved",
   author: {
     name: "Kirstin Charters",

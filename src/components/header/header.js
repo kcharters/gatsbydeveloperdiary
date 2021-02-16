@@ -25,15 +25,7 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
         }}
       >
         <h1 className="head-logo ml-4" style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
+            
         </h1>
         <SocialLinks contacts={contacts} />
       </div>
