@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-
+  branch: main # Branch to update (optional; defaults to master)
+  repo: kcharters/gatsbydeveloperdiary
 media_folder: static/assets
 public_folder: assets
 

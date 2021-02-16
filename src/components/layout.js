@@ -23,13 +23,7 @@ const Layout = ({ children }) => {
             title
             tagline
             author
-            contacts {
-              linkedin
-              github
-              stackoverflow
-              freecodecamp
-              twitter
-            }
+            
           }
         }
       }
@@ -40,7 +34,8 @@ const Layout = ({ children }) => {
             siteTitle={data.site.siteMetadata.title}
             tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
-            contacts={data.site.siteMetadata.contacts} />
+            contacts={data.site.siteMetadata.contacts}
+            />
           <div
             style={{
               margin: `0 auto`,
@@ -48,7 +43,11 @@ const Layout = ({ children }) => {
               paddingTop: 0,
             }}
           >
-            <main className="p-4">{children}</main>
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            <main className="p-4">{children}
+            
+            </main>
+            
             <footer className="text-center">
               <hr/>
               <p className="d-inline">© {new Date().getFullYear()} <a className="text-info" href="https://willjw3.github.io/">willjw3</a>, All Rights Reserved.</p>
@@ -57,6 +56,7 @@ const Layout = ({ children }) => {
                 <a className="text-info" href="https://www.gatsbyjs.org">Gatsby</a></i>
               </p>
             </footer>
+            
           </div>
         </>
       )}
@@ -69,3 +69,10 @@ Layout.propTypes = {
 }
 
 export default Layout
+// contacts {
+//   linkedin
+//   github
+//   stackoverflow
+//   freecodecamp
+//   twitter
+// }
