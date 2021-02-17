@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./blog-post.css"
 
+import Gitalk from 'gatsby-plugin-gitalk'
+
 import Sidebar from "../components/sidebar/Sidebar"
 import TechTag from "../components/tags/TechTag"
 import CustomShareBlock from "../components/CustomShareBlock"
@@ -15,6 +17,12 @@ const BlogPost = (props) => {
   const siteUrl = props.data.site.siteMetadata.url
   const url = `${siteUrl}${props.pageContext.slug}`;
   const tags = post.frontmatter.tags
+
+  let gitalkConfig = {
+    id: post.slug || post.id,
+    title:post.frontmatter.title,
+  }
+
 
   const getTechTags = (tags) => {
     const techTags = []
@@ -43,10 +51,12 @@ const BlogPost = (props) => {
             <div className="d-block">
               {getTechTags(tags)}
             </div>
+
             <br />
             <small><i>Published on </i> {post.frontmatter.date}</small>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <CustomShareBlock title={post.frontmatter.title} siteName={siteName} url={url} />
+            <Gitalk options={gitalkConfig}/>
           </div>
         </div>
       </div>

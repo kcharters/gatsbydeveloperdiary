@@ -30,6 +30,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-gitalk`,
+      options: {
+      config: {
+        clientID: "c90285846da929562b87",
+        clientSecret:"6a6e2663ee5018559a3589e4e9b6c74e7f72d12c",
+        repo:"gitalkrepo",
+        owner:"kcharters",
+        admin:['kcharters'],
+        id:"",
+        title:"",
+      }
+    }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

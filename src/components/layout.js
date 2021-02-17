@@ -35,7 +35,9 @@ const Layout = ({ children }) => {
             tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
             contacts={data.site.siteMetadata.contacts}
+            
             />
+            
           <div
             style={{
               margin: `0 auto`,
@@ -43,6 +45,7 @@ const Layout = ({ children }) => {
               paddingTop: 0,
             }}
           >
+             <script src="https://unpkg.com/netlify-auth-providers"></script>
             <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             <main className="p-4">{children}
             
