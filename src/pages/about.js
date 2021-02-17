@@ -40,14 +40,14 @@ const AboutPage = (props) => {
                                 <FaCheckCircle size={26} style={{ color: "success" }} />
                             </span>
                             <p className="d-inline-block ml-3 w-75 align-top">Figure out your website needs <br></br>
-                            <small>What do you want your website to do? Are you a small business ?</small></p>  
+                            <small>What do you want your website to do? Are you a small business or blogger ?</small></p>  
                         </div>
                         <div>
                             <span className="text-success d-inline-block" title="prism">
                                 <FaCheckCircle size={26} style={{ color: "success" }} />
                             </span>
                             <p className="d-inline-block ml-3 w-75 align-top"> Find Free and Priced plans for hosting and domain names <br></br>
-                            <small>during making my portfolio I did a lot of research on domains, subdomains and hosting comparing prices to my needs at the time</small></p>
+                            <small>during making my portfolio I did a lot of research on domains, subdomains and hosting, comparing prices to meet my needs at the time</small></p>
                         </div>
                         <div>
                             <span className="text-success d-inline-block" title="icons">

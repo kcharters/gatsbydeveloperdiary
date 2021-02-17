@@ -8,7 +8,7 @@ import { DiscussionEmbed } from "disqus-react"
 
 import Sidebar from "../components/sidebar/Sidebar"
 import TechTag from "../components/tags/TechTag"
-import CustomShareBlock from "../components/CustomShareBlock"
+// import CustomShareBlock from "../components/CustomShareBlock"
 
 const BlogPost = (props) => {
   const post = props.data.markdownRemark
