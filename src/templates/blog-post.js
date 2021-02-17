@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./blog-post.css"
 
-import Gitalk from 'gatsby-plugin-gitalk'
+import { DiscussionEmbed } from "disqus-react"
 
 import Sidebar from "../components/sidebar/Sidebar"
 import TechTag from "../components/tags/TechTag"
@@ -18,11 +18,11 @@ const BlogPost = (props) => {
   const url = `${siteUrl}${props.pageContext.slug}`;
   const tags = post.frontmatter.tags
 
-  let gitalkConfig = {
-    id: post.slug || post.id,
-    title:post.frontmatter.title,
+  const disqusConfig = {
+    shortname: `devdiary-2`,
+    config: { identifier: url, siteName  },
   }
-
+  
 
   const getTechTags = (tags) => {
     const techTags = []
@@ -55,9 +55,10 @@ const BlogPost = (props) => {
             <br />
             <small><i>Published on </i> {post.frontmatter.date}</small>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <CustomShareBlock title={post.frontmatter.title} siteName={siteName} url={url} />
-            <Gitalk options={gitalkConfig}/>
+            {/* <CustomShareBlock title={post.frontmatter.title} siteName={siteName} url={url} /> */}
+           
           </div>
+          <DiscussionEmbed {...disqusConfig} />
         </div>
       </div>
     </Layout>

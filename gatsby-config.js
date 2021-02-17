@@ -30,19 +30,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-gitalk`,
+      resolve: `gatsby-plugin-disqus`,
       options: {
-      config: {
-        clientID: "c90285846da929562b87",
-        clientSecret:"6a6e2663ee5018559a3589e4e9b6c74e7f72d12c",
-        repo:"gitalkrepo",
-        owner:"kcharters",
-        admin:['kcharters'],
-        id:"",
-        title:"",
+          shortname: `devdiary-2`
       }
-    }
-    },
+  },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
