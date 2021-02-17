@@ -6,7 +6,7 @@ date: '2021-02-17'
 ---
 I've always believed in working smarter not harder. 
 
-Especially when it comes to programming. There are multitudes of languages, frameworks, ides etc. out there that no one can truly remember or retain the knowledge of it all. I'm the first to admit I am not confident in my programming abilities, which is why I set myself small tasks in languages I think would help. Here are my most helpful things for those just starting web development or any type of programming.
+Especially when it comes to programming. There are multitudes of languages, frameworks, ideas etc. out there that no one can truly remember or retain the knowledge of it all. I'm the first to admit I am not confident in my programming abilities, which is why I set myself small tasks in languages I think would help. Here are my most helpful things for those just starting web development or any type of programming.
 
 ### Learn How to Google
 
