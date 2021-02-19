@@ -51,6 +51,7 @@ const Sidebar = () => {
                             <Link to="/"><span className="text-dark d-block py-1">Home</span></Link>
                             <Link to="/about"><span className="text-dark d-block py-1">About</span></Link>
                             <Link to="/archive"><span className="text-dark d-block py-1">Archive</span></Link>
+                            <a href="https://kcharters.nz/"><span className="text-dark  d-block py-1">Portfolio</span></a>
                         </div>
                         <div className="tech-tags mt-4">
                             <TechTags labels={data.site.siteMetadata.labels} posts={data.allMarkdownRemark.edges} />
