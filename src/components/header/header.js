@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 
@@ -21,12 +21,13 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
       <div className="head-elements"
         style={{
           margin: `0`,
-          padding: `.75rem`
+          paddingTop: `1rem`,
+          paddingBottom:`0.5rem`
         }}
       >
-        <h1 className="head-logo ml-4" style={{ margin: 0 }}>
-            
-        </h1>
+        <Link to="/"><h1 className="head-logo ml-4 text-white" style={{ margin: 0 }}>
+            Developer Journey
+        </h1></Link>
         <SocialLinks contacts={contacts} />
       </div>
       <MobileSocialLinks contacts={contacts} />

@@ -9,6 +9,7 @@ import Sidebar from "../components/sidebar/Sidebar"
 import TechTag from "../components/tags/TechTag"
 
 const PostList = (props) => {
+    if (!props) { return null };
     const posts = props.data.allMarkdownRemark.edges
     const labels = props.data.site.siteMetadata.labels
     const { currentPage, numPages } = props.pageContext
