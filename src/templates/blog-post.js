@@ -20,7 +20,7 @@ const BlogPost = (props) => {
 
   const disqusConfig = {
     shortname: `devdiary-2`,
-    config: { identifier: url, siteName  },
+    config: { identifier: url, siteName, url: props.location.href  },
   }
   
 
