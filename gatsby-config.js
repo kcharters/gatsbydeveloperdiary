@@ -7,7 +7,7 @@ module.exports = {
     url: siteConfig.url,
     title: siteConfig.title,
     tagline: siteConfig.tagline,
-    description: `My developer journey blog.`,
+    description: `My developer journey blog`,
     author: siteConfig.author.name,
     // contacts: {
     //   linkedin: siteConfig.author.contacts.linkedin,
