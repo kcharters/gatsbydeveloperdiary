@@ -6,7 +6,7 @@ const SocialLinks = ({ contacts }) => {
     return (
         <div className="social-links float-right mr-4">
        
-       <a href="www.linkedin.com/in/kirstin-charters" >
+       <a href="https://www.linkedin.com/in/kirstin-charters" >
       <svg style={{
           fill:' #0A66C2',
           paddingRight: '10px'
